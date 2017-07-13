@@ -11,7 +11,6 @@ if [ $restarts = "0" ]; then
 
 	echo "1" > output.txt;
 	sudo sed -i -e '$i \/home/pi/restartCount.sh &\n' /etc/rc.local;
-	sudo reboot
 fi
 
 if [ $restarts = "1" ]; then
